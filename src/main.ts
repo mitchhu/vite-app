@@ -8,7 +8,7 @@ const Mitt = mitt()
 const app = createApp(App);
 const stores = createPinia();
 
-declare module 'vue' {
+declare module '@vue/runtime-core' {
   export interface ComponentCustomProperties {
     $Bus: typeof Mitt
   }

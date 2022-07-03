@@ -9,6 +9,10 @@
 <script setup lang="ts">
 import renderDom from "./App";
 
+const instance = getCurrentInstance()
+
+console.log('instance', instance?.proxy?.$Bus);
+
 </script>
 
 
