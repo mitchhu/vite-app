@@ -13,11 +13,11 @@ export default defineConfig({
     vueJsx(),
     AutoImport({
       imports: ['vue'],
-      dts: 'types/auto-import.d.ts'
+      dts: 'src/types/auto-import.d.ts'
     }),
     Components({
       resolvers: [VantResolver()],
-      dts: 'types/components.d.ts'
+      dts: 'src/types/components.d.ts'
     }),
   ],
   server: {
